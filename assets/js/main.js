@@ -297,7 +297,7 @@ head.js("assets/js/gage/raphael.2.1.0.min.js", "assets/js/gage/justgage.js", fun
     window.onload = function() {
         var g1 = new JustGage({
             id: "g1",
-            value: getRandomInt(0, 1000),
+            value: 304,
             min: 0,
             max: 1000,
             relativeGaugeSize: true,
@@ -306,7 +306,7 @@ head.js("assets/js/gage/raphael.2.1.0.min.js", "assets/js/gage/justgage.js", fun
             labelFontColor : "#ffffff",
             titleFontColor: "#ffffff",
             valueFontColor :"#ffffff",
-            label: "VISITORS",
+            label: "Online Users",
             gaugeWidthScale: 0.2,
             donut: true
         });
