@@ -82,7 +82,7 @@
                     </li>
                     <li>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="icon-gear"></span>&#160;&#160;THEME</a>
+                            <span class="icon-gear"></span>&#160;&#160;Theme</a>
                         <ul role="menu" class="dropdown-setting dropdown-menu">
                             <li class="theme-bg">
                                 <div id="button-bg"></div>
@@ -96,7 +96,7 @@
                     </li>
                     <li class="hidden-xs">
                         <a class="toggle-left" href="#">
-                            <span style="font-size:20px;" class="icon-user-group"></span>
+                            <span data-toggle="tooltip" data-placement="bottom" title="User" style="font-size:20px;" class="icon-user-group tooltitle"></span>
                         </a>
                     </li>
                 </ul>
@@ -138,6 +138,12 @@
                             </a>
                         </li>
                         <li>
+                            <a class="tooltip-tip ajax-load" href="#" title="DC Table">
+                                <i class="entypo-alert"></i>
+                                <span>Blacklist</span>
+                            </a>
+                        </li>
+                        <li>
                             <a class="tooltip-tip ajax-load" href="#" title="Help">
                                 <i class="icon-help"></i>
                                 <span>Help</span>
@@ -160,7 +166,7 @@
                             <a class="tooltip-tip ajax-load" href="#" title="Mail">
                                 <i class="icon-graph-pie"></i>
                                 <span>Project Statistics</span>
-                                <div class="noft-blue">12</div>
+                                <div class="noft-purple-number">12</div>
                             </a>
                         </li>
                     </ul>
@@ -178,9 +184,9 @@
                         </li>
                         <li>
                             <a class="tooltip-tip ajax-load" href="#" title="Mail">
-                                <i class="icon-graph-pie"></i>
+                                <i class="icon-graph-line"></i>
                                 <span>User Statistics</span>
-                                <div class="noft-blue">100</div>
+                                <div class="noft-purple-number">100</div>
                             </a>
                         </li>
                     </ul>
@@ -192,8 +198,11 @@
                             <li>Total Project
                                 <span>12</span>
                             </li>
-                            <li>Total User
+                            <li>Total Investigator
                                 <span>100</span>
+                            </li>
+                            <li>Total Adminsitrator
+                                <span>5</span>
                             </li>
                         </ul>
                     </div>
@@ -293,7 +302,7 @@
                         <span><i class="icon-user-group"></i>&nbsp;&nbsp;USER</span>
                     </h3>
                     <div class="col-sm-12">
-                        <span class="label label-warning label-chat">Online</span>
+                        <span class="label label-warning label-chat">Online-Administrator</span>
                         <ul class="chat">
                             <li>
                                 <a href="#">
@@ -304,7 +313,29 @@
                                 </a>
                             </li>
                         </ul>
-                        <span class="label label-chat">Offline</span>
+                        <span class="label label-warning label-chat">Online-Interviewer</span>
+                        <ul class="chat">
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img alt="" class="img-chat img-circle" src="assets/img/user.png">
+                                    </span><b>Kenneth Lucas</b>
+                                    <br><i>Last Login : 21/12/2015, 07:21</i>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="label label-chat">Offline-Administrator</span>
+                        <ul class="chat">
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img alt="" class="img-chat img-offline img-circle" src="assets/img/user.png">
+                                    </span><b>Kenneth Lucas</b>
+                                    <br><i>Last Login : 21/12/2015, 07:21</i>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="label label-chat">Offline-Interviewer</span>
                         <ul class="chat">
                             <li>
                                 <a href="#">
