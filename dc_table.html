@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>PIAS V2.0</title>
+    <title>PIAS V2.0-DCTable</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Disposition Code Table">
+    <meta name="author" content="Liuyan">
     <!-- Le styles -->
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/loader-style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/js/button/ladda/ladda.min.css">
-    <link rel="shortcut icon" href="assets/ico/minus.png">
-    <link rel="stylesheet" href="assets/css/media.css">
-    <link rel="stylesheet" href="assets/css/social.css">
-    <link rel="stylesheet" type="text/css" href="assets/js/progress-bar/number-pb.css">
-    <style type="text/css">
-    canvas#canvas4 {
-        position: relative;
-        top: 20px;
-    }
-    </style>
+
+
+    <link href="assets/js/footable/css/footable.core.css?v=2-0-1" rel="stylesheet" type="text/css">
+    <link href="assets/js/footable/css/footable.standalone.css" rel="stylesheet" type="text/css">
+    <link href="assets/js/footable/css/footable-demos.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/js/dataTable/lib/jquery.dataTables/css/DT_bootstrap.css">
+    <link rel="stylesheet" href="assets/js/dataTable/css/datatables.responsive.css">
     
+    <link href="assets/js/iCheck/flat/all.css" rel="stylesheet">
+
+    <link href="assets/js/colorPicker/bootstrap-colorpicker.css" rel="stylesheet">
+    <link href="assets/js/switch/bootstrap-switch.css" rel="stylesheet">
+    <link href="assets/js/validate/validate.css" rel="stylesheet">
+    <link href="assets/js/idealform/css/jquery.idealforms.css" rel="stylesheet">
 </head>
 <body>
     <!-- TOP NAVBAR -->
@@ -239,7 +243,7 @@
                     <div class="col-sm-3">
                         <h2 class="tittle-content-header">
                             <i class="icon-media-record"></i> 
-                            <span>Main Page
+                            <span>DC Table
                             </span>
                         </h2>
 
@@ -265,189 +269,161 @@
                 <li>
                     <span class="entypo-home"></span>
                 </li>
-                <li><a href="index.html" title="Main page 1">Main Page</a>
+                <li><a href="index.html" title="Main page 1">Disposition Code Table</a>
                 </li>
             </ul>
             <!-- END OF BREADCRUMB -->
-            <!--  DEVICE MANAGER -->
-            <div class="content-wrap">
+          
+
+
+  			<!-- CONTENT -->
+            
+           
+           <div class="content-wrap">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="profit" id="profitClose">
-                            <div class="headline ">
-                            <h3>
-                                    <span>
-                                        <i class="fa icon-user-group"></i>
-                                        &#160;&#160;Administrators
-                                    </span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#profitClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">12</div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="revenue" id="revenueClose">
-                            <div class="headline ">
-                                <h3>
-                                    <span>
-                                        <i class="maki-aboveground-rail"></i>&#160;&#160;Interviewer</span>
-                                </h3>
+               
 
-                                <div class="titleClose">
-                                    <a href="#revenueClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                           	<div class="value">121</div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="order" id="orderClose">
-                            <div class="headline ">
-                                <h3>
-                                    <span>
-                                        <i class="fa icon-document"></i>
-                                        &#160;&#160;Projects
-                                    </span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#orderClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">5</div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3">
-                        <div class=" member" id="memberClose">
-                            <div class="headline ">
-                               <h3>
-                                    <span>
-                                        <i class="fa icon-phone"></i>
-                                        &#160;&#160;INVESTIGATIONS
-                                    </span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#memberClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">51123123</div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  / DEVICE MANAGER -->
-
-
-
-            <div class="content-wrap">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div id="siteClose" class="nest">
-                            <div class="title-alt">
-                                <h6>
-                                    <span class="entypo-doc-text-inv"></span>&nbsp;Description</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#siteClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#site">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="site" class="body-nest" style="min-height:296px;">
-                                <div class="table-responsive">
-                                    <p>This is the second version of Phone Investigation Assistant System (PIAS 2.0) which aims at helping you manage your phone interview project.
-                                    With this website, you can easily manage the whole processing of your investigation.
-                                    Phone you enjoy this program.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div id="RealTimeClose" class="nest">
-                            <div class="title-alt">
-                                <h6>
-                                    <span class="icon-user"></span>&nbsp;User</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#RealTimeClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#RealTime">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="RealTime" style="min-height:296px;padding-top:20px;" class="body-nest">
-                                 <div class="panel panel-default">
-                        			<img class="media-object img-circle blog-profile" alt="64x64" src="assets/img/user2.jpg">
-                        			<hr style="margin:0;">
-                        			<div class="panel-body">
-                            			<p class="lead text-center">Ian</p>
-                           				 <p class="social-follower text-center">Phone: 65700854</p>
-                        			</div>
-                   				 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-wrap">
-                <div class="row">
+                    <!-- /SIDEMENU MAIL -->
                     <div class="col-sm-12">
+                    
 
-                        <div class="nest" id="labelClose">
+                        <div class="nest" id="FilteringClose">
+                        
+                        
                             <div class="title-alt">
                                 <h6>
-                                    Bar Chart</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#labelClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#label">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="body-nest" id="label">
-                            <!--code is in "barChart.js"-->
-                                <canvas id="indexCavas1" class="myChart" height="416" width="900"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /END OF CONTENT -->
+                                    Disposition Code Table</h6>
+                     
 
+                            </div>
+
+                            <div class="body-nest" id="Filtering">
+
+                                <div class="row" style="margin-bottom:10px;">
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="Search..." type="text">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <select class="filter-status form-control">
+                                            <option value="yes">Yes
+                                            <option value="disabled">No
+                                        </select>
+                                    </div>
+                                     <!-- SIDEMENU MAIL -->
+                                    <div class="col-sm-6">
+                                    	<div class="side-mail">
+                            			 	<div class="btn btn-info button-mail" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;New Disposition Code</div>
+                                            <a href="#clear" style="margin-left:10px;" class="pull-right btn btn-info clear-filter" title="clear filter">Reset</a>
+                        				</div>
+                                         
+                                        <div aria-labelledby="myLargeModalLabel" role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg" style="display: none;" id="myModal">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+                                                            <span class="entypo-cancel"></span>
+                                                        </button>
+                                                        <h6 id="myLargeModalLabel" class="modal-title">New Disposition</h6>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="compose_mail">
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Disposition Code" id="DispositionCode" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Disposition Name" id="DispositionName" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Description" id="Description" class="form-control">
+                                                                </div>
+                                                                <div class="body-nest" id="switch">
+                                                                	<div class="form-group">
+                                            							<label class="col-lg-2 col-sm-2 control-label">Need Re-dial?</label>
+                                                                    	<div class="make-switch" data-on="yes" data-off="no">                                                                       	
+                                    										<input type="checkbox" checked="">
+                                										</div>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn" type="submit">Save</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+                                 <table id="footable-res2" class="demo" data-filter="#filter" data-filter-text-only="true">
+                                    <thead>
+                                        <tr>
+                                            <th data-toggle="true">
+                                                Disposition Code
+                                            </th>
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                Description
+                                            </th>
+                                            <th>
+                                                Need Re-Dial
+                                            </th>
+                                            <th data-hide="phone">
+                                                Modify
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>No answer</td>
+                                            <td>電話接通，但暫時無人接聽</td>                                           
+                                            <td>
+                                                <span class="status-metro status-active" title="Yes">Yes</span>
+                                            </td>
+                                            <td><div class="status-metro status-suspended" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;Modify</div>
+                                            	<div class="status-metro status-suspended"><i class="entypo-cancel"></i>&nbsp;&nbsp;Delete</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>busy / line engaged</td>
+                                            <td>電話暫時未能接通</td>
+                                            <td>
+                                                <span class="status-metro status-active" title="Yes">Yes</span>
+                                            </td>
+                                            <td><div class="status-metro status-suspended" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;Modify</div>
+                                            	<div class="status-metro status-suspended"><i class="entypo-cancel"></i>&nbsp;&nbsp;Delete</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>disconnect / wrong connection</td>
+                                            <td>空白電話/ 不能連接的電話號碼(包括要入 密碼的電話號碼)</td>
+                                            <td>
+                                                <span class="status-metro status-disabled" title="No">No</span>
+                                            </td>
+                                            <td><div class="status-metro status-suspended" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;Modify</div>
+                                            	<div class="status-metro status-suspended"><i class="entypo-cancel"></i>&nbsp;&nbsp;Delete</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+               
+            <!-- /END OF CONTENT -->
 
             
             <!-- FOOTER -->
@@ -529,9 +505,85 @@
         <script type="text/javascript" src="assets/js/app.js"></script>
         <script type="text/javascript" src="assets/js/load.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
+        
+        
+        <!--  GAGE -->
+   		<script type="text/javascript" src="assets/js/toggle_close.js"></script>
+    	<script src="assets/js/footable/js/footable.js?v=2-0-1" type="text/javascript"></script>
+   		<script src="assets/js/footable/js/footable.sort.js?v=2-0-1" type="text/javascript"></script>
+		<script src="assets/js/footable/js/footable.filter.js?v=2-0-1" type="text/javascript"></script>
+        <script src="assets/js/footable/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+        <script src="assets/js/footable/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/switch/bootstrap-switch.js"></script>
+        <script type="text/javascript" src="assets/js/iCheck/jquery.icheck.js"></script>
+        <script type="text/javascript">
+			$(function() {
+				$('.footable-res').footable();
+			});
+			</script>
+			<script type="text/javascript">
+			$(function() {
+				$('#footable-res2').footable().bind('footable_filtering', function(e) {
+					var selected = $('.filter-status').find(':selected').text();
+					if (selected && selected.length > 0) {
+						e.filter += (e.filter && e.filter.length > 0) ? ' ' + selected : selected;
+						e.clear = !e.filter;
+					}
+				});
+		
+				$('.clear-filter').click(function(e) {
+					e.preventDefault();
+					$('.filter-status').val('');
+					$('table.demo').trigger('footable_clear_filter');
+				});
+		
+				$('.filter-status').change(function(e) {
+					e.preventDefault();
+					$('table.demo').trigger('footable_filter', {
+						filter: $('#filter').val()
+					});
+				});
+		
+				$('.filter-api').click(function(e) {
+					e.preventDefault();
+		
+					//get the footable filter object
+					var footableFilter = $('table').data('footable-filter');
+		
+					alert('about to filter table by "tech"');
+					//filter by 'tech'
+					footableFilter.filter('tech');
+		
+					//clear the filter
+					if (confirm('clear filter now?')) {
+						footableFilter.clearFilter();
+					}
+				});
+			});
+		</script>
         <!--  PLUGIN -->
-   		<script type="text/javascript" src="assets/js/chart/chart.js"></script>
-        <script type="text/javascript" src="assets/js/chart/barChart.js"></script>
+        <script>
+        $(document).ready(function() {
+            //CHECKBOX PRETTYFY
+            $('.skin-flat input').iCheck({
+                checkboxClass: 'icheckbox_flat-red',
+                radioClass: 'iradio_flat-red'
+            });
+            $('.skin-line input').each(function() {
+                var self = $(this),
+                    label = self.next(),
+                    label_text = label.text();
     
+                label.remove();
+                self.iCheck({
+                    checkboxClass: 'icheckbox_line-blue',
+                    radioClass: 'iradio_line-blue',
+                    insert: '<div class="icheck_line-icon"></div>' + label_text
+                });
+            });
+            //Switch Button
+            $('.make-switch').bootstrapSwitch('setSizeClass', 'switch-small');
+        });
+        </script>
 </div></body>
 </html>
