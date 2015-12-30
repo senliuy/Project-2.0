@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="assets/js/dataTable/lib/jquery.dataTables/css/DT_bootstrap.css">
     <link rel="stylesheet" href="assets/js/dataTable/css/datatables.responsive.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
     
     <link href="assets/js/iCheck/flat/all.css" rel="stylesheet">
 
@@ -27,6 +28,7 @@
     <link href="assets/js/switch/bootstrap-switch.css" rel="stylesheet">
     <link href="assets/js/validate/validate.css" rel="stylesheet">
     <link href="assets/js/idealform/css/jquery.idealforms.css" rel="stylesheet">
+    
 </head>
 <body>
     <!-- TOP NAVBAR -->
@@ -158,7 +160,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip-tip ajax-load" href="#" title="DC Table">
+                            <a class="tooltip-tip ajax-load" href="blacklist.html" title="DC Table">
                                 <i class="entypo-alert"></i>
                                 <span>Blacklist</span>
                             </a>
@@ -312,10 +314,30 @@
                                      <!-- SIDEMENU MAIL -->
                                     <div class="col-sm-6">
                                     	<div class="side-mail">
-                            			 	<div class="btn btn-info button-mail" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;New Disposition Code</div>
-                                            <a href="#clear" style="margin-left:10px;" class="pull-right btn btn-info clear-filter" title="clear filter">Reset</a>
+                            			 	<div class="btn btn-info" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;New DC</div>
+                                           	
+                                            <div class="col-md-3 pull-right">
+                                            	<div class="text-center">
+                                                	<div class="input-group">
+                                                    	<span class="input-group-btn">
+                                                        	
+                                                        	<span class="btn btn-primary btn-file">
+                                                            	<span class="icon-upload"></span>
+                                                            	Upload
+                                                            	<input type="file" multiple>
+                                                        	</span>
+                                                    	</span>
+                                                    	<input type="text" class="form-control">
+                                            		</div>
+                                            	</div>
+                                        	</div>
+                                            <a href="#" style="margin-left:10px;" class="pull-right btn btn-info" title=""><span class="icon-cross"></span>&nbsp;Delete</a>
+                                            <a href="#" style="margin-left:10px;" class="pull-right btn btn-info" title=""><span class="icon-download"></span>&nbsp;Download</a>
+                                            <a href="#clear" style="margin-left:10px;" class="btn btn-info clear-filter" title="clear filter"><span class="entypo-arrows-ccw"></span>&nbsp;Reset</a>
                         				</div>
-                                         
+                                        
+                                        
+                                        
                                         <div aria-labelledby="myLargeModalLabel" role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg" style="display: none;" id="myModal">
                                             <div class="modal-dialog modal-lg">
                                                 <div class="modal-content">
@@ -323,7 +345,7 @@
                                                         <button aria-hidden="true" data-dismiss="modal" class="close" type="button">
                                                             <span class="entypo-cancel"></span>
                                                         </button>
-                                                        <h6 id="myLargeModalLabel" class="modal-title">New Disposition</h6>
+                                                        <h6 id="myLargeModalLabel" class="modal-title">New Disposition Code</h6>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="compose_mail">
@@ -359,6 +381,9 @@
                                  <table id="footable-res2" class="demo" data-filter="#filter" data-filter-text-only="true">
                                     <thead>
                                         <tr>
+                                        	<th>
+												
+											</th>
                                             <th data-toggle="true">
                                                 Disposition Code
                                             </th>
@@ -378,36 +403,39 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                        	<td><input type="checkbox" class="simple_form" /></td>
                                             <td>1</td>
                                             <td>No answer</td>
                                             <td>電話接通，但暫時無人接聽</td>                                           
                                             <td>
                                                 <span class="status-metro status-active" title="Yes">Yes</span>
                                             </td>
-                                            <td><div class="status-metro status-suspended" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;Modify</div>
-                                            	<div class="status-metro status-suspended"><i class="entypo-cancel"></i>&nbsp;&nbsp;Delete</div>
+                                            <td><button type="button" class="btn btn-default"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
+                                            	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
                                         </tr>
                                         <tr>
+                                        	<td><input type="checkbox" class="simple_form" /></td>
                                             <td>2</td>
                                             <td>busy / line engaged</td>
                                             <td>電話暫時未能接通</td>
                                             <td>
                                                 <span class="status-metro status-active" title="Yes">Yes</span>
                                             </td>
-                                            <td><div class="status-metro status-suspended" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;Modify</div>
-                                            	<div class="status-metro status-suspended"><i class="entypo-cancel"></i>&nbsp;&nbsp;Delete</div>
+                                            <td><button type="button" class="btn btn-default"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
+                                            	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
                                         </tr>
                                         <tr>
+                                        	<td><input type="checkbox" class="simple_form" /></td>
                                             <td>4</td>
                                             <td>disconnect / wrong connection</td>
                                             <td>空白電話/ 不能連接的電話號碼(包括要入 密碼的電話號碼)</td>
                                             <td>
                                                 <span class="status-metro status-disabled" title="No">No</span>
                                             </td>
-                                            <td><div class="status-metro status-suspended" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;Modify</div>
-                                            	<div class="status-metro status-suspended"><i class="entypo-cancel"></i>&nbsp;&nbsp;Delete</div>
+                                            <td><button type="button" class="btn btn-default"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
+                                            	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
                                         </tr>
                                     </tbody>
