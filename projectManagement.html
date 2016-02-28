@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>PIAS V2.0-Blacklist</title>
+    <title>PIAS V2.0-Project Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Disposition Code Table">
     <meta name="author" content="Liuyan">
@@ -246,7 +246,7 @@
                     <div class="col-sm-3">
                         <h2 class="tittle-content-header">
                             <i class="icon-media-record"></i> 
-                            <span>Blacklist
+                            <span>Project Management
                             </span>
                         </h2>
 
@@ -276,41 +276,24 @@
                 </li>
             </ul>
             <!-- END OF BREADCRUMB -->
-          
-
-
-  			<!-- CONTENT -->
-            
-           
+  			<!-- CONTENT -->        
            <div class="content-wrap">
                 <div class="row">
-               
-
                     <!-- /SIDEMENU MAIL -->
                     <div class="col-sm-12">
-                    
-
-                        <div class="nest" id="FilteringClose">
-                        
-                        
+                        <div class="nest" id="FilteringClose">   
                             <div class="title-alt">
-                                <h6>
-                                    Blacklist</h6>
-                     
-
+                                <h6>Project Management</h6>
                             </div>
-
                             <div class="body-nest" id="Filtering">
-
                                 <div class="row" style="margin-bottom:10px;">
                                     <div class="col-sm-4">
                                         <input class="form-control" id="filter" placeholder="Search..." type="text">
                                     </div>
-                                    
                                      <!-- SIDEMENU MAIL -->
                                      <div class="col-sm-6">
                                     	<div class="side-mail">
-                            			 	<div class="btn btn-info" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;New Blacklist</div>
+                            			 	<div class="btn btn-info" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;New Project</div>
                                            	
                                             <div class="col-md-3 pull-right">
                                             	<div class="text-center">
@@ -347,11 +330,22 @@
                                                         <div class="compose_mail">
                                                             <form role="form">
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Blacklist Phone" id="DispositionCode" class="form-control">
+                                                                    <input type="text" placeholder="Project ID" id="Blacklist Phone" class="form-control">
                                                                 </div>
-                                                                
                                                                 <div class="form-group">
-                                                                    <input type="text" placeholder="Description" id="Description" class="form-control">
+                                                                    <input type="text" placeholder="Project Name" id="Project Name" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="textarea" placeholder="Description" id="Description" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <span class="input-group-btn">
+                                                                    	<span class="btn btn-primary btn-file">
+                                                                        	<span class="icon-upload"></span>
+                                                            				Upload Phone List
+                                                            				<input type="file" multiple>
+                                                        				</span>
+                                                    				</span>
                                                                 </div>
                                                                 
                                                                 <button class="btn" type="submit">Save</button>
@@ -365,7 +359,7 @@
                                     </div>
                                     
                                 </div>
-                                <p class="lead well">Blacklist is for the phone numbers that will never be dialed.</p>
+                                <p class="lead well">Manage your projects here!</p>
                                  <table id="footable-res2" class="demo" data-filter="#filter" data-filter-text-only="true">
                                     <thead>
                                         <tr>
@@ -373,15 +367,17 @@
 												
 											</th>
                                             <th data-toggle="true">
-                                                Blacklist Phone
+                                                Project ID
                                             </th>
                                             <th>
-                                                Name
+                                                Project Name
                                             </th>
                                             <th>
                                                 Description
                                             </th>
-                                            
+                                            <th>
+                                                Phont List File
+                                            </th>
                                             <th>
                                                 Modify
                                             </th>
@@ -390,30 +386,30 @@
                                     <tbody>
                                         <tr>
                                         	<td><input type="checkbox" class="simple_form" /></td>
-                                            <td>3123131</td>
-                                            <td>No answer</td>
-                                            <td>電話接通，但暫時無人接聽</td>                                           
-                                            
+                                            <td>1</td>
+                                            <td>Project 1</td>
+                                            <td>Description 1</td>
+                                            <td>Phone List1.csv</td>
                                             <td><button type="button" class="btn btn-default"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
                                             	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
                                         </tr>
                                         <tr>
                                         	<td><input type="checkbox" class="simple_form" /></td>
-                                            <td>2312313</td>
-                                            <td>busy / line engaged</td>
-                                            <td>電話暫時未能接通</td>
-                                           
+                                            <td>2</td>
+                                            <td>Project 2</td>
+                                            <td>Description 2</td> 
+                                          	<td>Phone List2.csv</td>
                                             <td><button type="button" class="btn btn-default"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
                                             	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
                                         </tr>
                                         <tr>
                                         	<td><input type="checkbox" class="simple_form" /></td>
-                                            <td>4123123</td>
-                                            <td>disconnect / wrong connection</td>
-                                            <td>空白電話/ 不能連接的電話號碼(包括要入 密碼的電話號碼)</td>
-                                            
+                                            <td>3</td>
+                                            <td>Project 3</td>
+                                            <td>Description 3</td> 
+                                            <td>Phone List3.csv</td>
                                             <td><button type="button" class="btn btn-default"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
                                             	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
