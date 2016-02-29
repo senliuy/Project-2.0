@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>PIAS V2.0</title>
+    <title>PIAS V2.0-Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Disposition Code Table">
+    <meta name="author" content="Liuyan">
     <!-- Le styles -->
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/loader-style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/js/button/ladda/ladda.min.css">
-    <link rel="shortcut icon" href="assets/ico/minus.png">
-    <link rel="stylesheet" href="assets/css/media.css">
-    <link rel="stylesheet" href="assets/css/social.css">
-    <link rel="stylesheet" type="text/css" href="assets/js/progress-bar/number-pb.css">
-    <style type="text/css">
-    canvas#canvas4 {
-        position: relative;
-        top: 20px;
-    }
-    </style>
+
+
+    <link href="assets/js/footable/css/footable.core.css?v=2-0-1" rel="stylesheet" type="text/css">
+    <link href="assets/js/footable/css/footable.standalone.css" rel="stylesheet" type="text/css">
+    <link href="assets/js/footable/css/footable-demos.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/js/dataTable/lib/jquery.dataTables/css/DT_bootstrap.css">
+    <link rel="stylesheet" href="assets/js/dataTable/css/datatables.responsive.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
     
+    <link href="assets/js/iCheck/flat/all.css" rel="stylesheet">
+
+    <link href="assets/js/colorPicker/bootstrap-colorpicker.css" rel="stylesheet">
+    <link href="assets/js/switch/bootstrap-switch.css" rel="stylesheet">
+    <link href="assets/js/validate/validate.css" rel="stylesheet">
+    <link href="assets/js/idealform/css/jquery.idealforms.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- TOP NAVBAR -->
     <nav role="navigation" class="navbar navbar-static-top">
@@ -121,17 +128,17 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
     <!-- /END OF TOP NAVBAR -->
+
     <!-- SIDE MENU -->
     <div id="skin-select">
         <div id="logo">
-            <h1>PIAS
-                <span>v2.0</span>
+            <h1>Apricot
+                <span>v1.3</span>
             </h1>
         </div>
-        <a id="toggle">
-            <span class="entypo-menu"></span>
-        </a>
+
         <a id="toggle">
             <span class="entypo-menu"></span>
         </a>
@@ -148,7 +155,8 @@
                 <input type="search" placeholder="Search Menu..." class="id_search">
             </form>
         </div>
-        <div class="skin-part">
+
+       <div class="skin-part">
             <div id="tree-wrap">
                 <div class="side-bar">
                     <ul class="topnav menu-left-nest">
@@ -184,18 +192,18 @@
                     </ul>
                     <ul class="topnav menu-left-nest">
                         <li>
-                            <a href="#" style="border-left:0px solid!important;" class="title-menu-left" title="Project">
+                            <a href="#" style="border-left:0px solid!important;" class="title-menu-left">
                                 <span class="project"></span>
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip-tip ajax-load" href="projectManagement.html" title="Project Management">
+                            <a class="tooltip-tip ajax-load" href="projectManagement.html" title="Dashboard">
                                 <i class="entypo-plus-circled"></i>
                                 <span>Project Management</span>
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip-tip ajax-load" href="projectStatistics.html" title="Project Statistics">
+                            <a class="tooltip-tip ajax-load" href="projectStatistics.html" title="Mail">
                                 <i class="icon-graph-pie"></i>
                                 <span>Project Statistics</span>
                                 <div class="noft-purple-number">12</div>
@@ -244,18 +252,20 @@
             </div>
         </div>
     </div>
-    <!-- END OF SIDE MENU -->
+
     <!--  PAPER WRAP -->
     <div class="wrap-fluid">
         <div class="container-fluid paper-wrap bevel tlbr">
-            <!-- CONTENT -->
+
+
+				 <!-- CONTENT -->
             <!--TITLE -->
             <div class="row">
                 <div id="paper-top">
                     <div class="col-sm-3">
                         <h2 class="tittle-content-header">
                             <i class="icon-media-record"></i> 
-                            <span>Main Page
+                            <span>Blank Page
                             </span>
                         </h2>
 
@@ -269,9 +279,12 @@
                                 <button type="button" class="close" data-dismiss="alert">×</button>
                                 <span class="tittle-alert entypo-info-circled"></span>
                                 Welcome back,&nbsp;
-                                <strong>Ian!</strong>&nbsp;&nbsp;Your last sig in at 25/12/2015, 16:54 PM
+                                <strong>Dave mattew!</strong>&nbsp;&nbsp;Your last sig in at Yesterday, 16:54 PM
                             </div>
+
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -281,191 +294,213 @@
                 <li>
                     <span class="entypo-home"></span>
                 </li>
-                <li><a href="index.html" title="Main page 1">Main Page</a>
+                <li><i class="fa fa-lg fa-angle-right"></i>
+                </li>
+                <li><a href="#" title="Sample page 1">Extra Pages</a>
+                </li>
+                <li><i class="fa fa-lg fa-angle-right"></i>
+                </li>
+                <li><a href="#" title="Sample page 1">Blank Page</a>
                 </li>
             </ul>
+
             <!-- END OF BREADCRUMB -->
-            <!--  DEVICE MANAGER -->
-            <div class="content-wrap">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="profit" id="profitClose">
-                            <div class="headline ">
-                            <h3>
-                                    <span>
-                                        <i class="fa icon-user-group"></i>
-                                        &#160;&#160;Administrators
-                                    </span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#profitClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">12</div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="revenue" id="revenueClose">
-                            <div class="headline ">
-                                <h3>
-                                    <span>
-                                        <i class="maki-aboveground-rail"></i>&#160;&#160;Interviewer</span>
-                                </h3>
-
-                                <div class="titleClose">
-                                    <a href="#revenueClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                           	<div class="value">121</div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="order" id="orderClose">
-                            <div class="headline ">
-                                <h3>
-                                    <span>
-                                        <i class="fa icon-document"></i>
-                                        &#160;&#160;Projects
-                                    </span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#orderClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">5</div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3">
-                        <div class=" member" id="memberClose">
-                            <div class="headline ">
-                               <h3>
-                                    <span>
-                                        <i class="fa icon-phone"></i>
-                                        &#160;&#160;INVESTIGATIONS
-                                    </span>
-                                </h3>
-                                <div class="titleClose">
-                                    <a href="#memberClose" class="gone">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="value">51123123</div>
-                            <div class="progress-tinny">
-                                <div style="width: 50%" class="bar"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  / DEVICE MANAGER -->
-
-
 
             <div class="content-wrap">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div id="siteClose" class="nest">
-                            <div class="title-alt">
-                                <h6>
-                                    <span class="entypo-doc-text-inv"></span>&nbsp;Description</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#siteClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#site">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="site" class="body-nest" style="min-height:296px;">
-                                <div class="table-responsive">
-                                    <p>This is the second version of Phone Investigation Assistant System (PIAS 2.0) which aims at helping you manage your phone interview project.
-                                    With this website, you can easily manage the whole processing of your investigation.
-                                    Phone you enjoy this program.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div id="RealTimeClose" class="nest">
-                            <div class="title-alt">
-                                <h6>
-                                    <span class="icon-user"></span>&nbsp;User</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#RealTimeClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#RealTime">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="RealTime" style="min-height:296px;padding-top:20px;" class="body-nest">
-                                 <div class="panel panel-default">
-                        			<img class="media-object img-circle blog-profile" alt="64x64" src="assets/img/user2.jpg">
-                        			<hr style="margin:0;">
-                        			<div class="panel-body">
-                            			<p class="lead text-center">Ian</p>
-                           				 <p class="social-follower text-center">Phone: 65700854</p>
-                        			</div>
-                   				 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-wrap">
+                <!-- PROFILE -->
                 <div class="row">
                     <div class="col-sm-12">
+                        <div class="well profile">
+                            <div class="col-sm-12">
+                                <div class="col-xs-12 col-sm-4 text-center">
+                                    <ul class="list-group">
+                                        <li class="list-group-item text-left">
+                                            <span class="fontawesome-tasks"></span> Project</li>
 
-                        <div class="nest" id="labelClose">
-                            <div class="title-alt">
-                                <h6>
-                                    Investigation in each month</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#labelClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
+                                        <li class="list-group-item text-right">
+                                            <span class="pull-left">
+                                                <strong>Name</strong>
+                                            </span>Project 1
+                                        </li>
+                                        <li class="list-group-item text-right">
+                                            <span class="pull-left">
+                                                <strong>ID</strong>
+                                            </span>1
+                                        </li>
+                                        <li class="list-group-item text-right">
+                                            <span class="pull-left">
+                                                <strong>Create Date</strong>
+                                            </span>23/03/2016
+                                       	</li>
+                                        <li class="list-group-item text-right">
+                                            <span class="pull-left">
+                                                <strong>Investigators</strong>
+                                            </span>12
+                                       	</li>
+                                        <li class="list-group-item text-right">
+                                            <span class="pull-left">
+                                                <strong>Total Phone</strong>
+                                            </span>11232
+                                       	</li>
+                                        <li class="list-group-item text-right">
+                                            <span class="pull-left">
+                                                <strong>Phone Remaining</strong>
+                                            </span>2345
+                                       	</li>
+                                    </ul>
+
                                 </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#label">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
+                                <div class="col-xs-12 col-sm-8 profile-name">
+                                    <h2>DC Condition</h2>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-condensed">
+
+                                            <tbody>
+                                            	<tr>
+                                                	<th>DC Code</th>
+                                                    <th>Name</th>
+                                                    <th>Description</th>
+                                                    <th>Summation</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>No answer</td>
+                                                    <td>電話接通，但暫時無人接聽</td>  
+                                                    <td>1231</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>busy / line engaged</td>
+                                                    <td>電話暫時未能接通</td>
+                                                    <td>1231</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>disconnect / wrong connection</td>
+                                                    <td>空白電話/ 不能連接的電話號碼(包括要入 密碼的電話號碼)</td>
+                                                    <td>1231</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
                                 </div>
-                            </div>
-                            <div class="body-nest" id="label">
-                            <!--code is in "barChart.js"-->
-                                <canvas id="indexCavas1" class="myChart" height="416" width="900"></canvas>
+
                             </div>
                         </div>
                     </div>
+                  
+                                
+
+                              
+                                    <div class="row">
+                                        <!-- left column -->
+                                      
+
+                                        <!-- edit form column -->
+                                      	<div class="content-wrap">
+                <div class="row">
+                    <!-- /SIDEMENU MAIL -->
+                    <div class="col-sm-12">
+
+                        <div class="nest" id="FilteringClose">
+                        
+                        
+                            <div class="title-alt">
+                                <h6>
+                                    Disposition Code Table</h6>
+                            </div>
+
+                            <div class="body-nest" id="Filtering">
+
+                                <div class="row" style="margin-bottom:10px;">
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="Search..." type="text">
+                                    </div>
+                                     <!-- SIDEMENU MAIL -->
+                                    <div class="col-sm-6">
+                                    	<div class="side-mail">
+                                            <div class="col-md-3 pull-right">
+                                            	<div class="text-center">
+                                                	<div class="input-group">
+                                                    	<span class="input-group-btn">
+                                                        	
+                                                        	<span class="btn btn-primary btn-file">
+                                                            	<span class="icon-upload"></span>
+                                                            	Upload
+                                                            	<input type="file" multiple>
+                                                        	</span>
+                                                    	</span>
+                                                    	<input type="text" class="form-control">
+                                            		</div>
+                                            	</div>
+                                        	</div>
+                                            <a href="#" style="margin-left:10px;" class="pull-right btn btn-info" title=""><span class="icon-download"></span>&nbsp;Download</a>
+                                            <a href="#clear" style="margin-left:10px;" class="btn btn-info clear-filter" title="clear filter"><span class="entypo-arrows-ccw"></span>&nbsp;Reset</a>
+                        				</div>
+                                    </div>
+                                    
+                                </div>
+                                 <table id="footable-res2" class="demo" data-filter="#filter" data-filter-text-only="true">
+                                    <thead>
+                                        <tr>
+                                        	<th class="auto-style1">Phone</th>
+                                            <th class="auto-style4">Initial D.C.</th>
+                                            <th class="auto-style1">Inves.1</th>
+                                            <th class="auto-style1"> Second D. C.</th>
+                                            <th class="auto-style1">Inves.2</th>
+                                            <th class="auto-style1">Third D. C.</th>
+                                            <th class="auto-style2"> Inves.3</th>
+                                            <th class="auto-style1">Final D. C.</th>                                                 
+                                            <th class="auto-style1">Inves.4</th>
+                                            
+                                            <th data-hide="phone,tablet">Statistics</th>
+                                            <th data-hide="phone,tablet">Call date</th>
+                                            <th class="auto-style1">Edit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        	
+                                            <td>123</td>
+                                            <td>1</td>                                   
+                                            <td>234</td>
+                                            <td>1</td>                                   
+                                            <td>234</td>
+                                            <td>1</td>                                   
+                                            <td>234 </td>
+                                            <td>4</td>
+                                            <td>234</td>
+                                            <td><p>dc=1:3;</p><p>dc=4:1;</p></td>
+                                            <td>15/02/2016</td>
+                                            <td><button type="button" class="btn btn-default"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
+            </div>
+                        <!-- END OF BLANK PAGE -->
+
+                    </div>
+                </div>
+                <!-- END OF PROFILE -->
+
+
                 <!-- /END OF CONTENT -->
-
-
-            
+                <!-- FOOTER -->
+                 
             <!-- FOOTER -->
                 <div class="footer-space"></div>
                 <div id="footer">
@@ -545,24 +580,85 @@
         <script type="text/javascript" src="assets/js/app.js"></script>
         <script type="text/javascript" src="assets/js/load.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
-        <!--  PLUGIN -->
-   		<script type="text/javascript" src="assets/js/chart/chart.js"></script>
+        
+        <script type="text/javascript" src="assets/js/toggle_close.js"></script>
+    	<script src="assets/js/footable/js/footable.js?v=2-0-1" type="text/javascript"></script>
+   		<script src="assets/js/footable/js/footable.sort.js?v=2-0-1" type="text/javascript"></script>
+		<script src="assets/js/footable/js/footable.filter.js?v=2-0-1" type="text/javascript"></script>
+        <script src="assets/js/footable/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+        <script src="assets/js/footable/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/switch/bootstrap-switch.js"></script>
+        <script type="text/javascript" src="assets/js/iCheck/jquery.icheck.js"></script>
         <script type="text/javascript">
-		var barChartData = {
-          
-            labels : ["January","February","March","April","May","June","July","Auguest","September","October","Noveber","December"],
-            datasets : [
-                {
-                    fillColor : "rgba(52, 152, 219, 0.8)",
-                    data : [65,59,90,81,56,55,40,23,87,45,53,90]
-                }
-            ]
-        }
-    	var myLine = new Chart(document.getElementById("indexCavas1").getContext("2d")).Bar(barChartData,{
-        	scaleShowLabels : false,
-        	pointLabelFontSize : 24
-   	 	});
+			$(function() {
+				$('.footable-res').footable();
+			});
+			</script>
+			<script type="text/javascript">
+			$(function() {
+				$('#footable-res2').footable().bind('footable_filtering', function(e) {
+					var selected = $('.filter-status').find(':selected').text();
+					if (selected && selected.length > 0) {
+						e.filter += (e.filter && e.filter.length > 0) ? ' ' + selected : selected;
+						e.clear = !e.filter;
+					}
+				});
+		
+				$('.clear-filter').click(function(e) {
+					e.preventDefault();
+					$('.filter-status').val('');
+					$('table.demo').trigger('footable_clear_filter');
+				});
+		
+				$('.filter-status').change(function(e) {
+					e.preventDefault();
+					$('table.demo').trigger('footable_filter', {
+						filter: $('#filter').val()
+					});
+				});
+		
+				$('.filter-api').click(function(e) {
+					e.preventDefault();
+		
+					//get the footable filter object
+					var footableFilter = $('table').data('footable-filter');
+		
+					alert('about to filter table by "tech"');
+					//filter by 'tech'
+					footableFilter.filter('tech');
+		
+					//clear the filter
+					if (confirm('clear filter now?')) {
+						footableFilter.clearFilter();
+					}
+				});
+			});
 		</script>
+        <!--  PLUGIN -->
+        <script>
+        $(document).ready(function() {
+            //CHECKBOX PRETTYFY
+            $('.skin-flat input').iCheck({
+                checkboxClass: 'icheckbox_flat-red',
+                radioClass: 'iradio_flat-red'
+            });
+            $('.skin-line input').each(function() {
+                var self = $(this),
+                    label = self.next(),
+                    label_text = label.text();
     
+                label.remove();
+                self.iCheck({
+                    checkboxClass: 'icheckbox_line-blue',
+                    radioClass: 'iradio_line-blue',
+                    insert: '<div class="icheck_line-icon"></div>' + label_text
+                });
+            });
+            //Switch Button
+            $('.make-switch').bootstrapSwitch('setSizeClass', 'switch-small');
+        });
+        </script>
+
 </div></body>
+
 </html>
