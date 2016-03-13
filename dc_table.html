@@ -349,7 +349,45 @@
                                         
                                         
                                         
-                                        <div aria-labelledby="myLargeModalLabel" role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg" style="display: none;" id="myModal">
+                                        <div aria-labelledby="myLargeModalLabel" role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg" style="display: none;" id="myEditModal">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+                                                            <span class="entypo-cancel"></span>
+                                                        </button>
+                                                        <h6 id="myLargeModalLabel" class="modal-title">Edit Disposition Code</h6>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="compose_mail">
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <input type="text" disabled="" placeholder="Disposition Code" id="DispositionCode" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Disposition Name" id="DispositionName" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Description" id="Description" class="form-control">
+                                                                </div>
+                                                                <div class="body-nest" id="switch">
+                                                                	<div class="form-group">
+                                            							<label class="col-lg-2 col-sm-2 control-label">Need Re-dial?</label>
+                                                                    	<div class="make-switch" data-on="yes" data-off="no">                                                                       	
+                                    										<input type="checkbox" checked="">
+                                										</div>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn" type="submit">Save</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                          <div aria-labelledby="myLargeModalLabel" role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg" style="display: none;" id="myModal">
                                             <div class="modal-dialog modal-lg">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
@@ -385,6 +423,8 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                        
                                        
                                     </div>
                                     
@@ -421,7 +461,7 @@
                                             <td>
                                                 <span class="status-metro status-active" title="Yes">Yes</span>
                                             </td>
-                                            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
+                                            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myEditModal"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
                                             	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
                                         </tr>
@@ -433,7 +473,7 @@
                                             <td>
                                                 <span class="status-metro status-active" title="Yes">Yes</span>
                                             </td>
-                                            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
+                                            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myEditModal"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
                                             	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
                                         </tr>
@@ -445,7 +485,7 @@
                                             <td>
                                                 <span class="status-metro status-disabled" title="No">No</span>
                                             </td>
-                                            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
+                                            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myEditModal"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button>
                                             	<button type="button" class="btn btn-danger"><span class="entypo-cancel-squared"></span>&nbsp;&nbsp;Delete</button>
                                             </td>
                                         </tr>
@@ -462,6 +502,7 @@
                 </div>
             </div>
                
+            
             <!-- /END OF CONTENT -->
 
             
