@@ -213,13 +213,6 @@
                                 <span>User Management</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="tooltip-tip ajax-load" href="#" title="Mail">
-                                <i class="icon-graph-line"></i>
-                                <span>User Statistics</span>
-                                <div class="noft-purple-number">100</div>
-                            </a>
-                        </li>
                     </ul>
                     <div class="side-dash">
                         <h3>
@@ -236,8 +229,7 @@
                                 <span>5</span>
                             </li>
                         </ul>
-                        <!--pie graph of online user, see variable "JustGage" in main.js-->
-                        <div id="g1" style="height:180px" class="gauge"></div>
+                        
                     </div>
                 </div>
             </div>
@@ -435,36 +427,8 @@
                     </div>
                 </div>
             </div>
-            <div class="content-wrap">
-                <div class="row">
-                    <div class="col-sm-12">
 
-                        <div class="nest" id="labelClose">
-                            <div class="title-alt">
-                                <h6>
-                                    Investigation in each month</h6>
-                                <div class="titleClose">
-                                    <a class="gone" href="#labelClose">
-                                        <span class="entypo-cancel"></span>
-                                    </a>
-                                </div>
-                                <div class="titleToggle">
-                                    <a class="nav-toggle-alt" href="#label">
-                                        <span class="entypo-up-open"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="body-nest" id="label">
-                            <!--code is in "barChart.js"-->
-                                <canvas id="indexCavas1" class="myChart" height="416" width="900"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /END OF CONTENT -->
-
-
-            
+           <!-- /END OF CONTENT -->
             <!-- FOOTER -->
                 <div class="footer-space"></div>
                 <div id="footer">
@@ -499,37 +463,12 @@
                                     <br><i>Last Login : 21/12/2015, 07:21</i>
                                 </a>
                             </li>
-                        </ul>
-                        <span class="label label-warning label-chat">Online-Interviewer</span>
-                        <ul class="chat">
                             <li>
                                 <a href="#">
                                     <span>
                                         <img alt="" class="img-chat img-circle" src="assets/img/user.png">
-                                    </span><b>Kenneth Lucas</b>
-                                    <br><i>Last Login : 21/12/2015, 07:21</i>
-                                </a>
-                            </li>
-                        </ul>
-                        <span class="label label-chat">Offline-Administrator</span>
-                        <ul class="chat">
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        <img alt="" class="img-chat img-offline img-circle" src="assets/img/user.png">
-                                    </span><b>Kenneth Lucas</b>
-                                    <br><i>Last Login : 21/12/2015, 07:21</i>
-                                </a>
-                            </li>
-                        </ul>
-                        <span class="label label-chat">Offline-Interviewer</span>
-                        <ul class="chat">
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        <img alt="" class="img-chat img-offline img-circle" src="assets/img/user.png">
-                                    </span><b>Kenneth Lucas</b>
-                                    <br><i>Last Login : 21/12/2015, 07:21</i>
+                                    </span><b>Lucas</b>
+                                    <br><i>Project 2</i>
                                 </a>
                             </li>
                         </ul>
@@ -543,25 +482,7 @@
         <script type="text/javascript" src="assets/js/bootstrap.js"></script>
         <script type="text/javascript" src="assets/js/app.js"></script>
         <script type="text/javascript" src="assets/js/load.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
-        <!--  PLUGIN -->
-   		<script type="text/javascript" src="assets/js/chart/chart.js"></script>
-        <script type="text/javascript">
-		var barChartData = {
-          
-            labels : ["January","February","March","April","May","June","July","Auguest","September","October","Noveber","December"],
-            datasets : [
-                {
-                    fillColor : "rgba(52, 152, 219, 0.8)",
-                    data : [65,59,90,81,56,55,40,23,87,45,53,90]
-                }
-            ]
-        }
-    	var myLine = new Chart(document.getElementById("indexCavas1").getContext("2d")).Bar(barChartData,{
-        	scaleShowLabels : false,
-        	pointLabelFontSize : 24
-   	 	});
-		</script>
+        <script type="text/javascript" src="assets/js/main.js"></script>   
     
 </div></body>
 </html>
