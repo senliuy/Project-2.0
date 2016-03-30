@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PIAS V2.0-Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disposition Code Table">
+    <meta name="author" content="Liuyan">
+    <!-- Le styles -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader-style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+
+    <link href="assets/js/footable/css/footable.core.css?v=2-0-1" rel="stylesheet" type="text/css">
+    <link href="assets/js/footable/css/footable.standalone.css" rel="stylesheet" type="text/css">
+    <link href="assets/js/footable/css/footable-demos.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/js/dataTable/lib/jquery.dataTables/css/DT_bootstrap.css">
+    <link rel="stylesheet" href="assets/js/dataTable/css/datatables.responsive.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    
+    <link href="assets/js/iCheck/flat/all.css" rel="stylesheet">
+
+    <link href="assets/js/colorPicker/bootstrap-colorpicker.css" rel="stylesheet">
+    <link href="assets/js/switch/bootstrap-switch.css" rel="stylesheet">
+    <link href="assets/js/validate/validate.css" rel="stylesheet">
+    <link href="assets/js/idealform/css/jquery.idealforms.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+    	<div class="content-wrap">
+			<div class="row">
+            	<div class="col-sm-12">
+                	<div class="nest" id="FilteringClose">
+                        <div class="title-alt">
+                           <h6>Disposition Code Table</h6>
+                        </div>
+                        <div class="body-nest" id="Filtering">
+                        	<div class="row" style="margin-bottom:10px;">
+                            	<div class="col-sm-4">
+                                    <input class="form-control" id="filter" placeholder="Search..." type="text">
+                                </div>
+                            </div>
+                                 <table id="footable-res3" class="demo" data-filter="#filter" data-filter-text-only="true">
+                                    <thead>
+                                        <tr>
+                                        	<th class="auto-style1">Phone</th>
+                                            <th class="auto-style4">Initial D.C.</th>
+                                            <th class="auto-style1">Inves.1</th>
+                                            <th class="auto-style1"> Second D. C.</th>
+                                            <th class="auto-style1">Inves.2</th>
+                                            <th class="auto-style1">Third D. C.</th>
+                                            <th class="auto-style2"> Inves.3</th>
+                                            <th class="auto-style1">Final D. C.</th>                                                 
+                                            <th class="auto-style1">Inves.4</th>
+                                            
+                                            <th data-hide="phone,tablet">Statistics</th>
+                                            <th data-hide="phone,tablet">Final DC</th>
+                                            <th data-hide="phone,tablet">Call date</th>
+                                            <th class="auto-style1">Edit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        	
+                                            <td>123</td>
+                                            <td>1</td>                                   
+                                            <td>234</td>
+                                            <td>1</td>                                   
+                                            <td>234</td>
+                                            <td>1</td>                                   
+                                            <td>234 </td>
+                                            <td>4</td>
+                                            <td>234</td>
+                                            <td><p>dc=1:3;</p><p>dc=4:1;</p></td>
+                                            <td>4</td>
+                                            <td>15/02/2016</td>
+                                            <td><div class="btn btn-info" data-toggle="modal" data-target="#myModal"><i class="entypo-pencil"></i>&nbsp;&nbsp;Edit</div>
+                                            </td>
+                                        </tr>                                   
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+                
+                
+                
+    
+    
+        <!-- END OF RIGHT SLIDER CONTENT-->
+        <!-- MAIN EFFECT -->
+        <script type="text/javascript" src="assets/js/preloader.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/load.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        
+        <script type="text/javascript" src="assets/js/toggle_close.js"></script>
+    	<script src="assets/js/footable/js/footable.js?v=2-0-1" type="text/javascript"></script>
+   		<script src="assets/js/footable/js/footable.sort.js?v=2-0-1" type="text/javascript"></script>
+		<script src="assets/js/footable/js/footable.filter.js?v=2-0-1" type="text/javascript"></script>
+        <script src="assets/js/footable/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+        <script src="assets/js/footable/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/switch/bootstrap-switch.js"></script>
+        <script type="text/javascript" src="assets/js/iCheck/jquery.icheck.js"></script>
+        <script type="text/javascript">
+			$(function() {
+				$('.footable-res').footable();
+			});
+			</script>
+			<script type="text/javascript">
+			$(function() {
+				$('#footable-res3').footable().bind('footable_filtering', function(e) {
+					var selected = $('.filter-status').find(':selected').text();
+					if (selected && selected.length > 0) {
+						e.filter += (e.filter && e.filter.length > 0) ? ' ' + selected : selected;
+						e.filter = !e.filter;
+					}
+				});
+		
+				$('.clear-filter').click(function(e) {
+					e.preventDefault();
+					$('.filter-status').val('');
+					$('table.demo').trigger('footable_clear_filter');
+				});
+		
+				$('.filter-status').change(function(e) {
+					e.preventDefault();
+					$('table.demo').trigger('footable_filter', {
+						filter: $('#filter1').val()
+					});
+				});
+		
+				$('.filter-api').click(function(e) {
+					e.preventDefault();
+		
+					//get the footable filter object
+					var footableFilter = $('table').data('footable-filter');
+		
+					alert('about to filter table by "tech"');
+					//filter by 'tech'
+					footableFilter.filter('tech');
+		
+					//clear the filter
+					if (confirm('clear filter now?')) {
+						footableFilter.clearFilter();
+					}
+				});
+			});
+			
+		</script>
+        <!--  PLUGIN -->
+        <script>
+        $(document).ready(function() {
+            //CHECKBOX PRETTYFY
+            $('.skin-flat input').iCheck({
+                checkboxClass: 'icheckbox_flat-red',
+                radioClass: 'iradio_flat-red'
+            });
+            $('.skin-line input').each(function() {
+                var self = $(this),
+                    label = self.next(),
+                    label_text = label.text();
+    
+                label.remove();
+                self.iCheck({
+                    checkboxClass: 'icheckbox_line-blue',
+                    radioClass: 'iradio_line-blue',
+                    insert: '<div class="icheck_line-icon"></div>' + label_text
+                });
+            });
+            //Switch Button
+            $('.make-switch').bootstrapSwitch('setSizeClass', 'switch-small');
+        });
+        </script>
+
+</div></body>
+
+</html>

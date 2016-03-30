@@ -1,0 +1,179 @@
+<div class="content-wrap">
+                <div class="row">
+                    <!-- /SIDEMENU MAIL -->
+                    <div class="col-sm-12">
+                        <div class="nest" id="FilteringClose">   
+                            <div class="title-alt">
+                                <h6>Search</h6>
+                            </div>
+                            <div class="body-nest" id="Filtering">
+                                <div class="row" style="margin-bottom:10px;">
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="Begin Dial Data (YYYYMMDD)" type="text">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="End Dial Data (YYYYMMDD)" type="text">
+                                    </div>
+                                    
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="Begin Modify Data (YYYYMMDD)" type="text">
+                                    </div>
+                                    <hr>
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="End Modify Data (YYYYMMDD)" type="text">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="Investigator Phone" type="text">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="Customer Phone" type="text">
+                                    </div>
+                                    <hr>
+                                    <hr>
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="filter" placeholder="Deposition Code" type="text">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <select class="form-control">
+                                            <option value="Project 1">Project 1
+                                            <option value="Project 2">Project 2
+                                            <option value="Project 3">Project 3
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-sm-4">
+                                        <button class="btn" type="submit">Submit</button>
+                                    </div>
+                                     <!-- SIDEMENU MAIL -->
+                                     <div class="col-sm-6">
+                                        
+                                        <div aria-labelledby="myLargeModalLabel" role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg" style="display: none;" id="myModal">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+                                                            <span class="entypo-cancel"></span>
+                                                        </button>
+                                                        <h6 id="myLargeModalLabel" class="modal-title">Edit Investigation</h6>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="compose_mail">
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Customer Phone: 1323133" id="CustomerPhone" class="form-control" disabled="true">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Initial DC" id="Initial DC" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Initial Dial Phone" id="Initial Dial Phone" class="form-control">
+                                                                </div>
+                                                                 <div class="form-group">
+                                                                    <input type="text" placeholder="Second DC" id="Second DC" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Second Dial Phone" id="Second Dial Phone" class="form-control">
+                                                                </div>
+                                                                 <div class="form-group">
+                                                                    <input type="text" placeholder="Third DC" id="Third DC" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Third Dial Phone" id="Third Dial Phone" class="form-control">
+                                                                </div>
+                                                                 <div class="form-group">
+                                                                    <input type="text" placeholder="Final DC" id="Final DC" class="form-control">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Final Dial Phone" id="Final Dial Phone" class="form-control">
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                                <button class="btn" type="submit">Save</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+                                <p class="lead well">Searching...</p>
+                                 <table id="footable-res2" class="demo">
+                                    <thead>
+                                        <tr>
+                                                <th>No.</th>
+                                                <th >Customer Phone</th>
+                                                <th>Ini. Code</th>
+                                                <th data-hide="phone,tablet">Inves.1</th>
+                                                <th data-hide="phone,tablet">Initial Dial Date</th>
+                                                <th data-hide="phone,tablet">Initial Modify Date</th>
+                                                <th data-hide="phone">Ini. Phone</th>
+                                                <th>Sec. Code</th>
+                                                <th data-hide="phone,tablet">Inves.2</th>
+                                                <th data-hide="phone,tablet">Second Dial Date</th>
+                                                <th data-hide="phone,tablet">Second Modify Date</th>
+                                                <th data-hide="phone">Sec. Phone</th>
+                                                <th>Third. Code</th>
+                                                <th data-hide="phone,tablet">Inves.3</th>
+                                                <th data-hide="phone,tablet">Third Dial Date</th>
+                                                <th data-hide="phone,tablet">Third Modify Date</th>
+                                                <th data-hide="phone">Third. Phone</th>
+                                                <th>Final. Code</th>
+                                                <th data-hide="phone,tablet">Inves.4</th>
+                                                <th data-hide="phone,tablet">Final Dial Date</th>
+                                                <th data-hide="phone,tablet">Final Modify Date</th>
+                                                <th data-hide="phone">Final. Phone</th>
+                                                <th data-hide="phone,tablet">Need Re-dial</th>
+                                                <th data-hide="phone">Edit</th>
+                                            </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>1323133</td>
+                                                <td>1</td>
+                                                <td>mb43244</td>
+                                                <td>2016/03/20</td>
+                                                <td>2016/03/30</td>
+                                                <td>1231312</td>
+                                                <td>1</td>
+                                                <td>mb43244</td>
+                                                <td>2016/03/20</td>
+                                                <td>2016/03/30</td>
+                                                <td>1231312</td>
+                                                <td>1</td>
+                                                <td>mb43244</td>
+                                                <td>2016/03/20</td>
+                                                <td>2016/03/30</td>
+                                                <td>1231312</td>
+                                                <td>1</td>
+                                                <td>mb43244</td>
+                                                <td>2016/03/20</td>
+                                                <td>2016/03/30</td>
+                                                <td>1231312</td>
+                                                <td>No</td>
+                                                
+                                                <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"><span class="entypo-pencil"></span>&nbsp;&nbsp;Edit</button></td>
+                                            </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="24">
+                                                <div class="pagination pagination-centered"></div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
